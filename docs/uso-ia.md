@@ -51,3 +51,13 @@ Prompt del estudiante: «subida completa». Continuación del paso 5 del plan ap
 Resultado: select nativo con label asociado, evento change y botón que comparten la función de generación. Number convierte la selección de texto a número; se validan explícitamente 6/8/9.
 
 Validación: secuencia real 6 → 8 → 9 → 6 en Chrome y casos inválidos en Node. Se actualizó el contrato de generatePalette para rechazar tamaños fuera de la consigna.
+
+## 6. HSL y alternancia de formatos
+
+Prompt del estudiante: «ok, ya hice el push del paso 5, LISTO». Continuación del paso 6 aprobado.
+
+Resultado: selector de formato con label; colores como objetos HEX/HSL; funciones de conversión y generación según modo; estado currentPalette que conserva colores al cambiar de vista. HEX visible en todos los casos.
+
+Decisiones: HEX como referencia para evitar cambios visuales al alternar; HSL equivalente redondeado a dos decimales. La conversión matemática, parseInt con base 16, slice, toString(16) y padStart son ampliaciones explicadas de los fundamentos del módulo. Referencia consultada: HSL en MDN.
+
+Validación: colores conocidos, 1000 conversiones de ida y vuelta y seis combinaciones reales en Chrome, documentadas en pruebas.md. La vista previa se reinició al detectar que el servidor local estaba detenido.

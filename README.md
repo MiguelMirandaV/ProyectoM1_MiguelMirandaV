@@ -4,7 +4,7 @@ Proyecto del módulo 1 del Full Stack Bootcamp: Aplicación web estática para e
 
 ## Estado actual
 
-Paso 5: genera paletas HEX de 6, 8 o 9 colores. El selector actualiza la paleta inmediatamente; el botón genera otra del tamaño elegido. Modo HSL y publicación pendientes.
+Paso 6: genera paletas de 6, 8 o 9 colores en HEX o HSL, muestra HEX siempre y permite cambiar de vista sin perder la paleta. Auditoría final, evidencias y publicación pendientes.
 
 ## Alcance previsto
 
@@ -35,7 +35,7 @@ Abre la carpeta en VS Code. Desde su terminal, ejecuta `python3 -m http.server 5
 
 ## Uso y despliegue
 
-Selecciona 6, 8 o 9 colores para generar una paleta. Pulsa Generar paleta para obtener otra del tamaño seleccionado. Cada acción reemplaza la paleta anterior. HSL y publicación pendientes.
+Selecciona 6, 8 o 9 colores. Cambiar la cantidad genera una paleta nueva. Elige HEX o HSL: cambiar el formato conserva los colores actuales y modifica su representación. Pulsa Generar paleta para obtener otra en el formato seleccionado. HEX permanece visible en ambos modos. Publicación pendiente.
 
 ## Decisiones técnicas
 
@@ -55,3 +55,9 @@ Copiar HEX, bloqueo de colores, guardado local y animaciones. Fuera del alcance 
 ## Evidencias
 
 Carpeta de Drive y capturas pendientes. Se incorporarán antes de la entrega.
+
+### Conversión de colores
+
+Cada color almacena HEX y HSL. En modo HEX se generan seis dígitos aleatorios; en HSL se generan matiz (0–359), saturación y luminosidad (0–100). Se convierte a HEX como referencia común de la muestra y se calcula su equivalente HSL con dos decimales. Puede existir redondeo de hasta 1 por canal RGB al reconvertir.
+
+Referencia: [HSL en MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/hsl).

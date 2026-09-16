@@ -225,6 +225,21 @@ h1 span {
   font-weight: 700;
 }
 
+.hsl-code:not([hidden]) {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--color-muted);
+  font-family: ui-monospace, monospace;
+  font-size: 0.875rem;
+  overflow-wrap: anywhere;
+}
+
+.format-help {
+  max-width: 45rem;
+  color: var(--color-muted);
+  font-size: 0.875rem;
+}
+
 .site-footer p {
   margin: 0 0 0.5rem;
 }

@@ -40,3 +40,11 @@ Solo se registran como aprobadas comprobaciones ejecutadas. Las pruebas de la ap
 - Mensaje de estado coherente en las cinco generaciones. Registro de consola sin errores ni advertencias capturados.
 - Pruebas de lógica en Node: tamaños válidos 6/8/9; RangeError para 0, 7, -1, 6.5, NaN, null y texto "6". La interfaz convierte el valor del select a número antes de llamar a la función.
 - Cambio respecto al paso 4: tamaño 0 ya no devuelve una paleta vacía; ahora se rechaza porque no es una opción permitida por la consigna.
+
+## Paso 6: HSL y alternancia
+
+- Node: nueve colores conocidos (primarios, secundarios, negro, blanco y gris) convertidos correctamente a HEX.
+- Node: seis combinaciones tamaño/formato y formato inválido rechazado.
+- Node: 1000 conversiones HEX → HSL → HEX con diferencia máxima permitida de 1 por canal RGB.
+- Chrome: seis combinaciones 6/8/9 × HEX/HSL, conteo correcto y HEX válido siempre visible. HSL visible solo en ese modo.
+- Chrome: alternar HSL a HEX conserva todos los códigos de la paleta. Sin errores ni advertencias capturados en consola.
