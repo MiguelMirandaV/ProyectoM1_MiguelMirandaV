@@ -16,11 +16,11 @@ Resultado: plan por etapas con generación, DOM, accesibilidad, documentación y
 
 El asistente creó la estructura, archivos vacíos de aplicación, README, .gitignore y estos registros.
 
-Validación prevista de esta etapa: revisar archivos, primer commit y sincronización con GitHub. Añadir resultados al finalizar la comprobación.
+Validación realizada: estructura revisada, primer commit registrado y sincronización con GitHub confirmada. Los avances posteriores también quedaron versionados por etapas.
 
 ## Evidencia visual
 
-Pendiente: capturas de las conversaciones y de los resultados. Deben mostrar los prompts y respuestas reales, junto con su relación con el código. No se han generado capturas ficticias.
+Las capturas reales de la aplicación están en [flujo-app.md](flujo-app.md). Pendiente de incorporar: capturas auténticas de las conversaciones que muestren el prompt y la respuesta correspondiente. Los extractos textuales siguientes documentan el uso de IA, pero no se presentan como capturas de conversación.
 
 ## Registro de futuras iteraciones
 
@@ -69,3 +69,27 @@ Prompt del estudiante: «LISTO, sigue con paso 7».
 Resultado: ajuste de columnas según cantidad, controles móviles adaptables y foco del destino del enlace de salto.
 
 Influencia de las pruebas: el diseño previo podía dejar una fila con cinco tarjetas y otra con una; se reemplazó por distribuciones equilibradas para los tamaños de la consigna. Se comprobó funcionamiento en 24 combinaciones, geometría sin desbordamiento a cuatro anchos, teclado, foco y contraste calculado. Resultados y límites registrados en pruebas.md.
+
+## 8. Aclaraciones y revisión crítica
+
+Extractos literales de preguntas del estudiante:
+
+> por qué utilizas var en el css (e.g.   background-color: var(--color-background);) ? por qué utilizas skip link? y por qué escogiste las fuentes que escogiste?
+
+> por qué usaste XML? hizo parte de mi material de estudio?
+
+> por qué 8 debe ser texto inicialmente?
+
+Relación con el proyecto: revisar las variables CSS, la navegación mediante enlace de salto, la elección de fuentes y el tipo de dato devuelto por los controles HTML. El valor de un select se lee como texto y `Number` permite convertirlo para validarlo como tamaño. La aplicación usa HTML, CSS y JavaScript; no necesita un archivo XML. Las APIs adicionales se deben comprender y verificar, sin asumir que toda propuesta de IA pertenece al temario.
+
+## 9. Documentación y entrega en el repositorio
+
+Prompt del estudiante: «LISTO, sigue con paso 9».
+
+Aclaración posterior del estudiante (extracto literal):
+
+> no es necesario adjuntar un drive, solo compartir el link al repo de github con todos los archivos pertinentes ahí
+
+Decisión: guardar documentación y evidencias en `docs/` dentro del repositorio, sin Drive. La IA preparó el README, el flujo documentado y cinco capturas reales de la aplicación local. El estudiante revisará los archivos, añadirá capturas de las conversaciones y realizará commit y push. La publicación y prueba de GitHub Pages corresponden al paso 10 y todavía no se presentan como realizadas.
+
+Para completar la evidencia visual de IA, guardar capturas legibles de dos intercambios reales (prompt y respuesta): planificación inicial y una aclaración técnica. Nombres sugeridos: `evidencias/06-ia-plan.png` y `evidencias/07-ia-aclaraciones.png`. Estos archivos todavía no forman parte del repositorio al redactar este registro. Evitar incluir datos privados o credenciales.

@@ -1,69 +1,101 @@
 # Colorfly Studio - Paletanator 3,000
 
-Proyecto del módulo 1 del Full Stack Bootcamp: Aplicación web estática para explorar paletas de colores aleatorias.
+Proyecto Integrador del módulo 1 del Full Stack Bootcamp de Henry. Aplicación web estática para explorar paletas de colores aleatorias.
 
-## Estado actual
+Autor: MiguelMirandaV.
 
-Paso 7: MVP local implementado y revisado en Chrome. Generación HEX/HSL, tamaños 6/8/9, feedback, navegación con teclado y diseño adaptable verificados. Documentación final, evidencias y publicación pendientes.
+![Paleta de ocho colores con códigos HEX y HSL](docs/evidencias/03-ocho-hsl.png)
 
-## Alcance previsto
+## Estado
 
-- Generar paletas de 6, 8 o 9 colores.
-- Alternar entre HSL y HEX, conservando el código HEX visible.
-- Mostrar tarjetas dinámicas y feedback accesible.
-- Usar HTML semántico y diseño adaptable con foco y contraste visibles.
-- Publicar en GitHub Pages y documentar pruebas y uso de IA.
+MVP implementado y probado localmente en Chrome. Publicación en GitHub Pages pendiente del paso 10. La entrega se concentra en este repositorio público, con código, documentación y evidencias; no requiere Drive según la aclaración del curso comunicada por el estudiante.
 
-## Tecnologías
+## Funcionalidades
 
-HTML5, CSS y JavaScript. Git para control de versiones locales y GitHub para públicas, GitHub Pages para producción. Sin backend ni dependencias de aplicación.
+- Generar paletas de 6, 8 o 9 colores aleatorios.
+- Generar en HEX o HSL y mantener HEX siempre visible.
+- Alternar la representación sin cambiar los colores actuales.
+- Mostrar mensajes de estado y reemplazar la paleta anterior sin acumular tarjetas.
+- Adaptar la distribución a móvil, tablet y escritorio, con controles etiquetados y navegación por teclado.
 
-## Estructura
+## Tecnologías y estructura
+
+HTML5, CSS y JavaScript sin frameworks, backend ni dependencias de aplicación. Git registra el historial y GitHub aloja el repositorio. El despliegue previsto usa GitHub Pages.
 
 ```text
-index.html         Estructura de la página
-css/styles.css     Estilos y responsividad a pantallas de dispositivos
-css/palette.css    Hoja de colores que JavaScript actualiza en memoria
-js/script.js       Interactividad, eventos y actualización del DOM
-docs/uso-ia.md     Registro de uso de IA y decisiones
-docs/pruebas.md    Pruebas
+ProyectoM1_MiguelMirandaV/
+├── index.html
+├── css/
+│   ├── styles.css
+│   └── palette.css
+├── js/
+│   └── script.js
+├── README.md
+├── .gitignore
+└── docs/
+    ├── flujo-app.md
+    ├── uso-ia.md
+    ├── pruebas.md
+    └── evidencias/
 ```
 
 ## Ejecución local
 
-Abre la carpeta en VS Code. Desde su terminal, ejecuta `python3 -m http.server 5500 --bind 127.0.0.1` y visita http://127.0.0.1:5500. Detén el servidor con Control+C. Python solo sirve los archivos durante el desarrollo; no es una dependencia de la aplicación. También puedes usar Live Server si ya lo tienes instalado.
+Requisitos para estos comandos: Git, Python 3 y un navegador moderno. Desde una terminal:
 
-## Uso y despliegue
+```bash
+git clone https://github.com/MiguelMirandaV/ProyectoM1_MiguelMirandaV.git
+cd ProyectoM1_MiguelMirandaV
+python3 -m http.server 5500 --bind 127.0.0.1
+```
 
-Selecciona 6, 8 o 9 colores. Cambiar la cantidad genera una paleta nueva. Elige HEX o HSL: cambiar el formato conserva los colores actuales y modifica su representación. Pulsa Generar paleta para obtener otra en el formato seleccionado. HEX permanece visible en ambos modos. Publicación pendiente.
+Abre [la aplicación local](http://127.0.0.1:5500). Detén el servidor con Control+C. Si ya tienes el proyecto, abre su carpeta en VS Code y ejecuta solamente el comando del servidor en su terminal integrada. Si el puerto está ocupado por otro servidor, detenlo o usa otro puerto y ajusta la URL.
+
+También puedes abrir `index.html` mediante la extensión Live Server de VS Code. Python o Live Server solo sirven los archivos durante el desarrollo. No se necesita `npm install` ni un proceso de compilación. Usa un servidor HTTP local: la aplicación modifica una hoja CSS del mismo origen y no se verifica su funcionamiento abriendo el archivo directamente con `file://`.
+
+## Cómo usar la aplicación
+
+1. Pulsa **Generar paleta** para crear los seis colores iniciales.
+2. Selecciona **6, 8 o 9 colores**; el cambio genera una nueva paleta de ese tamaño.
+3. Selecciona **HEX o HSL**; la vista cambia conservando los colores actuales. En HSL se muestran ambos códigos.
+4. Pulsa **Generar paleta** nuevamente para crear colores en el formato seleccionado.
+5. Revisa el mensaje de estado para confirmar la cantidad y el modo utilizados.
+
+Con teclado, usa Tab para avanzar por los controles. El enlace inicial permite saltar al contenido; Enter activa el botón de generación.
+
+## Despliegue en GitHub Pages
+
+El despliegue público todavía debe ejecutarse y comprobarse. Para publicarlo desde este repositorio:
+
+1. Sube los cambios a la rama `main` del repositorio público.
+2. En GitHub, abre **Settings → Pages**.
+3. En **Build and deployment**, selecciona **Deploy from a branch**.
+4. Elige la rama `main` y la carpeta **/(root)**, y guarda.
+5. Espera a que termine el despliegue; revisa su resultado en **Actions** y abre la URL que muestre Pages.
+6. Comprueba que carguen CSS y JavaScript y prueba las seis combinaciones de tamaño/formato. Incorpora aquí el enlace público verificado.
+
+`index.html` está en la raíz y las rutas de los recursos son relativas. La carpeta `docs` contiene documentación, no es la fuente de publicación. Los siguientes pushes a `main` actualizarán el sitio una vez configurado Pages.
+
+Referencia: [configurar la fuente de publicación en GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
 ## Decisiones técnicas
 
-- Separar estructura, estilos y comportamiento en tres archivos principales.
-- Construir primero el flujo básico; completar requisitos antes de incorporar extras.
-- Mantener commits pequeños, descriptivos y vinculados con cambios reales.
-- Documentar resultados verificados, sin presentar funcionalidades pendientes como terminadas.
+- **Separación de responsabilidades:** HTML describe la estructura, CSS la presentación y JavaScript genera los colores, escucha eventos y actualiza el DOM.
+- **Funciones pequeñas y estado:** la generación, conversión y representación se separan; `currentPalette` conserva los colores al alternar formato. Se validan los tamaños y formatos permitidos.
+- **Conversión:** HEX se usa como referencia común de la muestra. HSL se representa con dos decimales; la reconversión puede diferir hasta una unidad por canal RGB por redondeo.
+- **Estilos externos:** `palette.css` recibe reglas mediante CSSOM en memoria. Al reemplazar una paleta se eliminan las reglas anteriores; el archivo de disco no cambia.
+- **Accesibilidad:** estructura semántica, labels, controles nativos, foco visible, enlace de salto y mensajes de estado. Los códigos tienen una superficie blanca estable para evitar depender del contraste del color aleatorio.
+- **Diseño:** variables CSS para consistencia y fuentes del sistema sin descargas externas. Grid usa una columna en móvil, dos desde 40rem y tres desde 64rem; las paletas de ocho usan cuatro desde 64rem.
+- **Proceso:** MVP antes que extras, commits descriptivos, comprobación de las propuestas de IA y documentación de resultados reales.
 
-## Pruebas y uso de IA
+## Documentación y evidencias
 
-Consulta el [registro de pruebas](docs/pruebas.md) y el [registro de IA](docs/uso-ia.md).
+- [Flujo de la aplicación con capturas](docs/flujo-app.md).
+- [Registro de pruebas y límites de la revisión](docs/pruebas.md).
+- [Prompts, decisiones y uso de IA](docs/uso-ia.md).
 
-## Mejoras opcionales
+Se probaron las seis combinaciones de cantidad/formato en cuatro anchos (320, 390, 768 y 1440 px), conversiones de colores, entradas inválidas, conservación al alternar, teclado y contraste. La revisión cubre accesibilidad básica; no equivale a una certificación ni a una prueba con lector de pantalla. El despliegue público se comprobará por separado.
 
-Copiar HEX, bloqueo de colores, guardado local y animaciones. Fuera del alcance inicial; se considerarán después de verificar la entrega obligatoria.
+## Límites y mejoras futuras
 
-## Evidencias
-
-Carpeta de Drive y capturas pendientes. Se incorporarán antes de la entrega.
-
-### Conversión de colores
-
-Cada color almacena HEX y HSL. En modo HEX se generan seis dígitos aleatorios; en HSL se generan matiz (0–359), saturación y luminosidad (0–100). Se convierte a HEX como referencia común de la muestra y se calcula su equivalente HSL con dos decimales. Puede existir redondeo de hasta 1 por canal RGB al reconvertir.
-
-Referencia: [HSL en MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/hsl).
-
-### Accesibilidad y diseño adaptable
-
-Controles nativos con labels, foco visible, enlace para saltar al contenido y región de estado para mensajes. Los códigos permanecen sobre fondo blanco. Una columna en móvil, dos desde 40rem y tres desde 64rem; las paletas de ocho usan cuatro columnas desde 64rem.
-
-Probado en Chrome a 320, 390, 768 y 1440 píxeles. La revisión cubre accesibilidad básica; no equivale a una certificación ni a una prueba con lector de pantalla.
+Los colores son aleatorios: pueden repetirse y no se garantiza armonía cromática. Recargar la página reinicia la paleta. No se implementaron copiado, bloqueo, guardado local ni animaciones; se consideran mejoras opcionales después de completar la entrega.
