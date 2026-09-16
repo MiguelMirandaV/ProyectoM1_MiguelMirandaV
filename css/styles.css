@@ -26,7 +26,8 @@ body {
   line-height: 1.6;
 }
 
-button {
+button,
+select {
   font: inherit;
 }
 
@@ -131,6 +132,26 @@ h1 span {
   color: var(--color-text);
   font-weight: 700;
   cursor: pointer;
+}
+
+.control-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.control-field label {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.control-field select {
+  min-height: 3rem;
+  padding: 0.75rem 2rem 0.75rem 0.75rem;
+  border: 1px solid var(--color-muted);
+  border-radius: 0.5rem;
+  background-color: var(--color-surface);
+  color: var(--color-text);
 }
 
 .button-primary:disabled {

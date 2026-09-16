@@ -4,7 +4,7 @@ Proyecto del módulo 1 del Full Stack Bootcamp: Aplicación web estática para e
 
 ## Estado actual
 
-Paso 4: el botón genera seis colores HEX y reemplaza las tarjetas anteriores. Incluye feedback visible. Selectores 6/8/9, modo HSL y publicación siguen pendientes.
+Paso 5: genera paletas HEX de 6, 8 o 9 colores. El selector actualiza la paleta inmediatamente; el botón genera otra del tamaño elegido. Modo HSL y publicación pendientes.
 
 ## Alcance previsto
 
@@ -35,7 +35,7 @@ Abre la carpeta en VS Code. Desde su terminal, ejecuta `python3 -m http.server 5
 
 ## Uso y despliegue
 
-Pulsa Generar paleta para obtener seis colores con sus códigos HEX. Cada clic reemplaza la paleta anterior. La publicación y los selectores siguen pendientes.
+Selecciona 6, 8 o 9 colores para generar una paleta. Pulsa Generar paleta para obtener otra del tamaño seleccionado. Cada acción reemplaza la paleta anterior. HSL y publicación pendientes.
 
 ## Decisiones técnicas
 

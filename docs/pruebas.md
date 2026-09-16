@@ -33,3 +33,10 @@ Solo se registran como aprobadas comprobaciones ejecutadas. Las pruebas de la ap
 - Revisión visual: muestras coloreadas. Registro de consola del navegador: sin errores ni advertencias capturados.
 - Prueba de lógica en Node con objetos mínimos para cargar el script; no simula ni valida el render: paletas de tamaño 6 y 0; 1000 códigos con formato válido; Math.random controlado en los extremos produce #000000 y #FFFFFF.
 - Validación de tamaños inválidos y formatos HSL: pendientes de etapas siguientes.
+
+## Paso 5: selector de tamaño
+
+- Chrome: generación inicial de seis colores, cambios 6 → 8 → 9 → 6 y otro clic. Conteos comprobados: 6, 8, 9, 6 y 6.
+- Mensaje de estado coherente en las cinco generaciones. Registro de consola sin errores ni advertencias capturados.
+- Pruebas de lógica en Node: tamaños válidos 6/8/9; RangeError para 0, 7, -1, 6.5, NaN, null y texto "6". La interfaz convierte el valor del select a número antes de llamar a la función.
+- Cambio respecto al paso 4: tamaño 0 ya no devuelve una paleta vacía; ahora se rechaza porque no es una opción permitida por la consigna.

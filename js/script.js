@@ -1,6 +1,7 @@
 "use strict";
 
 const generateButton = document.querySelector("#generate-button");
+const paletteSize = document.querySelector("#palette-size");
 const paletteList = document.querySelector("#palette-list");
 const emptyState = document.querySelector("#empty-state");
 const paletteStatus = document.querySelector("#palette-status");
@@ -20,6 +21,12 @@ function generateHexColor() {
 }
 
 function generatePalette(size) {
+  // El select entrega texto; su conversión a número se realiza en el evento.
+  // Validar aquí también protege la función si se llama desde otro lugar.
+  if (size !== 6 && size !== 8 && size !== 9) {
+    throw new RangeError("El tamaño de la paleta debe ser 6, 8 o 9.");
+  }
+
   const colors = [];
 
   for (let index = 0; index < size; index++) {
@@ -70,12 +77,20 @@ function renderPalette(colors) {
 }
 
 function handleGeneratePalette() {
-  const colors = generatePalette(6);
+  const size = Number(paletteSize.value);
+  if (size !== 6 && size !== 8 && size !== 9) {
+    paletteStatus.textContent = "Selecciona una cantidad válida: 6, 8 o 9 colores.";
+    return;
+  }
+
+  const colors = generatePalette(size);
   renderPalette(colors);
   generationCount++;
   paletteStatus.textContent = "Paleta " + generationCount + ": " + colors.length + " colores HEX generados.";
 }
 
 generateButton.addEventListener("click", handleGeneratePalette);
+paletteSize.addEventListener("change", handleGeneratePalette);
 // Activamos el control solo después de conectar su comportamiento.
 generateButton.disabled = false;
+paletteSize.disabled = false;

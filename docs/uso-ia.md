@@ -43,3 +43,11 @@ Resultado: funciones generateHexColor, generatePalette, renderPalette y handleGe
 Decisión: mantener texto sobre superficie blanca; eliminar tarjetas y reglas de color anteriores antes de renderizar. CSSOM y creación de nodos se explican como ampliaciones puntuales del módulo.
 
 Validación: clics reales en Chrome y pruebas de funciones en Node, detalladas en pruebas.md. Una consulta automatizada a la propiedad sheet no estuvo disponible en el entorno de inspección; se usaron inspección del DOM y revisión visual, sin presentarla como error de la aplicación.
+
+## 5. Selector de tamaño
+
+Prompt del estudiante: «subida completa». Continuación del paso 5 del plan aprobado.
+
+Resultado: select nativo con label asociado, evento change y botón que comparten la función de generación. Number convierte la selección de texto a número; se validan explícitamente 6/8/9.
+
+Validación: secuencia real 6 → 8 → 9 → 6 en Chrome y casos inválidos en Node. Se actualizó el contrato de generatePalette para rechazar tamaños fuera de la consigna.

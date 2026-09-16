@@ -24,11 +24,19 @@
         <p class="intro">Tu próxima idea empieza con un color. Encuentra una combinación que te inspire.</p>
 
         <div class="generator-controls">
+          <div class="control-field">
+            <label for="palette-size">Cantidad de colores</label>
+            <select id="palette-size" name="palette-size" disabled>
+              <option value="6">6 colores</option>
+              <option value="8">8 colores</option>
+              <option value="9">9 colores</option>
+            </select>
+          </div>
           <button class="button-primary" id="generate-button" type="button" disabled aria-describedby="palette-status">Generar paleta</button>
         </div>
 
         <!-- La región existe desde el inicio para anunciar los próximos cambios. -->
-        <p class="status-message" id="palette-status" role="status">Pulsa Generar paleta para explorar seis colores.</p>
+        <p class="status-message" id="palette-status" role="status">Elige una cantidad y pulsa Generar paleta para empezar.</p>
         <noscript>Activa JavaScript en tu navegador para generar paletas.</noscript>
 
         <section class="palette-section" aria-labelledby="palette-title">
