@@ -1,6 +1,6 @@
 # Registro de pruebas
 
-Solo se registran como aprobadas comprobaciones ejecutadas. Las pruebas de la aplicación se añadirán a medida que se implemente.
+Este registro reúne las comprobaciones ejecutadas por Codex durante el desarrollo y la publicación. Utilicé los resultados para revisar el avance del proyecto. Las secciones por paso conservan el historial y explican los cambios de comportamiento; los límites de la revisión se indican expresamente.
 
 | Etapa | Comprobación | Resultado |
 | --- | --- | --- |
@@ -8,22 +8,22 @@ Solo se registran como aprobadas comprobaciones ejecutadas. Las pruebas de la ap
 | Entorno | VS Code instalado | Verificado en macOS |
 | Preparación | Estructura y documentación inicial | Archivos creados; aún sin aplicación |
 
-## Pendientes del MVP
+## Alcance de la revisión
 
 - Seis combinaciones: tamaños 6/8/9 y formatos HSL/HEX.
 - Correspondencia entre muestras visuales y códigos.
 - Generaciones y cambios de tamaño repetidos sin acumulación de tarjetas.
 - Microfeedback, teclado, labels, foco visible y contraste.
 - Móvil, tablet y desktop sin desbordamientos que impidan el uso.
-- Console y Network sin errores de la aplicación.
-- URL pública, repositorio público y documentación accesible.
+- Consola sin errores capturados y comprobación de carga de la aplicación; no se presenta una auditoría exhaustiva de Network.
+- URL pública y enlaces a la documentación del repositorio.
 
 ## Paso 3: página inicial
 
 - Verificado en Chrome en http://127.0.0.1:5500/: título, encabezados, mensaje inicial, lista vacía y botón deshabilitado.
 - Inspección visual desktop: CSS aplicado, contenido legible y sin solapamientos en la vista inspeccionada.
 - git diff --check: sin errores tras normalizar espacios finales.
-- Pruebas de generación, responsive completo, accesibilidad y consola: pendientes de sus etapas.
+- La generación, el responsive, la accesibilidad básica y la consola se revisaron en etapas posteriores, descritas abajo.
 
 ## Paso 4: seis colores HEX
 
@@ -32,7 +32,7 @@ Solo se registran como aprobadas comprobaciones ejecutadas. Las pruebas de la ap
 - DOM inspeccionado: seis códigos HEX y cero atributos style.
 - Revisión visual: muestras coloreadas. Registro de consola del navegador: sin errores ni advertencias capturados.
 - Prueba de lógica en Node con objetos mínimos para cargar el script; no simula ni valida el render: paletas de tamaño 6 y 0; 1000 códigos con formato válido; Math.random controlado en los extremos produce #000000 y #FFFFFF.
-- Validación de tamaños inválidos y formatos HSL: pendientes de etapas siguientes.
+- Los tamaños inválidos y el formato HSL se verificaron en los pasos 5 y 6.
 
 ## Paso 5: selector de tamaño
 
@@ -75,7 +75,7 @@ Solo se registran como aprobadas comprobaciones ejecutadas. Las pruebas de la ap
 
 Contrastes calculados con luminancia relativa sRGB: texto/fondo 14.52:1; texto secundario/fondo 6.35:1; secundario/tarjeta 6.83:1; texto/botón 13.93:1; texto/botón hover 12.17:1; foco/fondo 5.92:1.
 
-Límites: revisión de accesibilidad básica, sin prueba auditiva de lector de pantalla ni certificación WCAG. El chequeo estructural local no sustituye una validación completa del estándar HTML. Publicación y prueba de recursos en la URL de GitHub Pages pendientes del paso 10. No se implementaron extras.
+Límites: revisión de accesibilidad básica, sin prueba auditiva de lector de pantalla ni certificación WCAG. El chequeo estructural local no sustituye una validación completa del estándar HTML. La comprobación del sitio publicado se documenta en el paso 10. No se implementaron extras.
 
 
 ## Paso 10: comprobación pública — 2026-09-16

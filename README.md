@@ -2,7 +2,6 @@
 
 Proyecto Integrador del módulo 1 del Full Stack Bootcamp de Henry. Aplicación web estática para explorar paletas de colores aleatorias.
 
-Autor: MiguelMirandaV.
 
 ![Paleta de ocho colores con códigos HEX y HSL](docs/evidencias/03-ocho-hsl.png)
 
@@ -12,7 +11,7 @@ MVP publicado en GitHub Pages y probado en Chrome, tanto localmente como en la U
 
 **[Abrir la aplicación](https://miguelmirandav.github.io/ProyectoM1_MiguelMirandaV/)**
 
- La entrega se concentra en este repositorio público, con código, documentación y evidencias; no requiere Drive según la aclaración del curso comunicada por el estudiante.
+La entrega se concentra en este repositorio público, con código, documentación y evidencias.
 
 ## Funcionalidades
 
@@ -24,7 +23,7 @@ MVP publicado en GitHub Pages y probado en Chrome, tanto localmente como en la U
 
 ## Tecnologías y estructura
 
-HTML5, CSS y JavaScript sin frameworks, backend ni dependencias de aplicación. Git registra el historial y GitHub aloja el repositorio. El despliegue usa GitHub Pages.
+HTML5, CSS y JavaScript sin frameworks, backend ni dependencias de aplicación. Git registra el historial y GitHub aloja el repositorio. El despliegue se hace en GitHub Pages.
 
 ```text
 ProyectoM1_MiguelMirandaV/
@@ -91,6 +90,10 @@ Referencia: [configurar la fuente de publicación en GitHub Pages](https://docs.
 - **Accesibilidad:** estructura semántica, labels, controles nativos, foco visible, enlace de salto y mensajes de estado. Los códigos tienen una superficie blanca estable para evitar depender del contraste del color aleatorio.
 - **Diseño:** variables CSS para consistencia y fuentes del sistema sin descargas externas. Grid usa una columna en móvil, dos desde 40rem y tres desde 64rem; las paletas de ocho usan cuatro desde 64rem.
 - **Proceso:** MVP antes que extras, commits descriptivos, comprobación de las propuestas de IA y documentación de resultados reales.
+
+## Uso de IA
+
+Utilicé Codex como tutor y apoyo para planificar el proyecto, generar el código y la documentación y ejecutar comprobaciones. Mi participación incluyó definir restricciones, revisar y preguntar por las decisiones técnicas, realizar commits y pushes, incorporar capturas de conversación y configurar GitHub Pages. El registro de IA detalla las aportaciones y verificaciones.
 
 ## Documentación y evidencias
 
