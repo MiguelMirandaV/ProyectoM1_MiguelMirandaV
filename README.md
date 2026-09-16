@@ -4,7 +4,7 @@ Proyecto del módulo 1 del Full Stack Bootcamp: Aplicación web estática para e
 
 ## Estado actual
 
-Paso 3: página inicial con HTML semántico y CSS externo. El botón permanece deshabilitado hasta implementar la generación en el paso 4. JavaScript todavía está vacío; la aplicación no está publicada.
+Paso 4: el botón genera seis colores HEX y reemplaza las tarjetas anteriores. Incluye feedback visible. Selectores 6/8/9, modo HSL y publicación siguen pendientes.
 
 ## Alcance previsto
 
@@ -23,6 +23,7 @@ HTML5, CSS y JavaScript. Git para control de versiones locales y GitHub para pú
 ```text
 index.html         Estructura de la página
 css/styles.css     Estilos y responsividad a pantallas de dispositivos
+css/palette.css    Hoja de colores que JavaScript actualiza en memoria
 js/script.js       Interactividad, eventos y actualización del DOM
 docs/uso-ia.md     Registro de uso de IA y decisiones
 docs/pruebas.md    Pruebas
@@ -34,7 +35,7 @@ Abre la carpeta en VS Code. Desde su terminal, ejecuta `python3 -m http.server 5
 
 ## Uso y despliegue
 
-Pendientes de implementación y verificación. La versión final incluirá instrucciones completas y el enlace de GitHub Pages.
+Pulsa Generar paleta para obtener seis colores con sus códigos HEX. Cada clic reemplaza la paleta anterior. La publicación y los selectores siguen pendientes.
 
 ## Decisiones técnicas
 

@@ -33,3 +33,13 @@ Mensaje del estudiante: «se completó la subida». Continuación del plan aprob
 Resultado: header, main, footer, secciones tituladas, botón, lista de colores y región de estado; CSS externo con Grid/Flexbox y foco visible. Se conservó el nombre Paletanator 3,000 que el estudiante incorporó al README. El botón queda deshabilitado para no presentar como funcional una acción aún pendiente.
 
 Decisión: separar la estructura del comportamiento y usar defer para ejecutar el futuro JavaScript después de procesar el HTML. Comprobación ejecutada: página abierta en Chrome y revisión visual desktop. Generación y auditoría completa pendientes. Las capturas de entrega se recopilarán en la etapa de evidencias.
+
+## 4. Generación de seis colores
+
+Prompt del estudiante: «entendido, ahora sí LISTO, continúa». Continuación del paso 4 del plan aprobado.
+
+Resultado: funciones generateHexColor, generatePalette, renderPalette y handleGeneratePalette; creación de tarjetas con APIs del DOM y texto con textContent. Hoja palette.css separada para modificar colores mediante CSSOM sin atributos style.
+
+Decisión: mantener texto sobre superficie blanca; eliminar tarjetas y reglas de color anteriores antes de renderizar. CSSOM y creación de nodos se explican como ampliaciones puntuales del módulo.
+
+Validación: clics reales en Chrome y pruebas de funciones en Node, detalladas en pruebas.md. Una consulta automatizada a la propiedad sheet no estuvo disponible en el entorno de inspección; se usaron inspección del DOM y revisión visual, sin presentarla como error de la aplicación.

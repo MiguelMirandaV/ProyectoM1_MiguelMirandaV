@@ -138,6 +138,10 @@ h1 span {
   cursor: not-allowed;
 }
 
+.button-primary:hover:not(:disabled) {
+  background-color: #c9f268;
+}
+
 .status-message {
   min-height: 1.6em;
   margin-block: 1rem 2rem;
@@ -169,6 +173,35 @@ h1 span {
   padding-block: 1.5rem;
   border-top: 1px solid var(--color-border);
   font-size: 0.875rem;
+}
+
+/* Los códigos permanecen sobre fondo blanco para conservar su legibilidad. */
+.color-card {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background-color: var(--color-surface);
+}
+
+.color-swatch {
+  height: 12rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.color-details {
+  padding: 1rem;
+}
+
+.color-label {
+  margin: 0 0 0.25rem;
+  color: var(--color-muted);
+  font-size: 0.875rem;
+}
+
+.color-code {
+  font-family: ui-monospace, monospace;
+  font-size: 1.125rem;
+  font-weight: 700;
 }
 
 .site-footer p {

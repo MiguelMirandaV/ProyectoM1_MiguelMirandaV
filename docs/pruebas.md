@@ -24,3 +24,12 @@ Solo se registran como aprobadas comprobaciones ejecutadas. Las pruebas de la ap
 - Inspección visual desktop: CSS aplicado, contenido legible y sin solapamientos en la vista inspeccionada.
 - git diff --check: sin errores tras normalizar espacios finales.
 - Pruebas de generación, responsive completo, accesibilidad y consola: pendientes de sus etapas.
+
+## Paso 4: seis colores HEX
+
+- Chrome: tres generaciones consecutivas; seis tarjetas tras cada generación, sin acumulación.
+- Estado inicial vacío y botón habilitado al conectar el evento; mensaje actualizado con número de generación.
+- DOM inspeccionado: seis códigos HEX y cero atributos style.
+- Revisión visual: muestras coloreadas. Registro de consola del navegador: sin errores ni advertencias capturados.
+- Prueba de lógica en Node con objetos mínimos para cargar el script; no simula ni valida el render: paletas de tamaño 6 y 0; 1000 códigos con formato válido; Math.random controlado en los extremos produce #000000 y #FFFFFF.
+- Validación de tamaños inválidos y formatos HSL: pendientes de etapas siguientes.
