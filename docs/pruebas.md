@@ -17,3 +17,10 @@ Solo se registran como aprobadas comprobaciones ejecutadas. Las pruebas de la ap
 - Móvil, tablet y desktop sin desbordamientos que impidan el uso.
 - Console y Network sin errores de la aplicación.
 - URL pública, repositorio público y documentación accesible.
+
+## Paso 3: página inicial
+
+- Verificado en Chrome en http://127.0.0.1:5500/: título, encabezados, mensaje inicial, lista vacía y botón deshabilitado.
+- Inspección visual desktop: CSS aplicado, contenido legible y sin solapamientos en la vista inspeccionada.
+- git diff --check: sin errores tras normalizar espacios finales.
+- Pruebas de generación, responsive completo, accesibilidad y consola: pendientes de sus etapas.

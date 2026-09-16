@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora combinaciones de color con Paletanator 3,000, el generador de paletas de Colorfly Studio.">
+    <title>Paletanator 3,000 | Colorfly Studio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <p class="brand">Colorfly <span>Studio</span></p>
+      <p class="site-caption">Un punto de partida para tus ideas.</p>
+    </header>
+
+    <main id="contenido">
+      <section class="generator" aria-labelledby="generator-title">
+        <p class="eyebrow">Explora. Combina. Crea.</p>
+        <h1 id="generator-title">Paletanator <span>3,000</span></h1>
+        <p class="intro">Tu próxima idea empieza con un color. Encuentra una combinación que te inspire.</p>
+
+        <div class="generator-controls">
+          <button class="button-primary" id="generate-button" type="button" disabled aria-describedby="palette-status">Generar paleta</button>
+        </div>
+
+        <!-- La región existe desde el inicio para anunciar los próximos cambios. -->
+        <p class="status-message" id="palette-status" role="status">Generador en preparación. Pronto podrás crear tu primera paleta.</p>
+
+        <section class="palette-section" aria-labelledby="palette-title">
+          <h2 id="palette-title">Tu paleta</h2>
+          <p class="empty-state" id="empty-state">Aquí aparecerán tus colores y sus códigos HEX.</p>
+          <ul class="palette-grid" id="palette-list" aria-label="Colores de la paleta"></ul>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Hecho por MiguelMirandaV · Proyecto Integrador M1</p>
+      <a href="https://github.com/MiguelMirandaV/ProyectoM1_MiguelMirandaV">Ver código en GitHub</a>
+    </footer>
+  </body>
+</html>

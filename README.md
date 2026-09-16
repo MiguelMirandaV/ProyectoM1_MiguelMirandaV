@@ -1,10 +1,10 @@
-# Colorfly Studio — Generador de paletas
+# Colorfly Studio - Paletanator 3,000
 
-Proyecto Integrador del módulo 1 de Full Stack de Henry, de MiguelMirandaV. Aplicación web estática para explorar paletas de colores aleatorias.
+Proyecto del módulo 1 del Full Stack Bootcamp: Aplicación web estática para explorar paletas de colores aleatorias.
 
 ## Estado actual
 
-Paso 2: estructura y documentación inicial. Los archivos HTML, CSS y JavaScript todavía están vacíos; el generador no está implementado ni publicado. Este documento se actualizará con cada avance.
+Paso 3: página inicial con HTML semántico y CSS externo. El botón permanece deshabilitado hasta implementar la generación en el paso 4. JavaScript todavía está vacío; la aplicación no está publicada.
 
 ## Alcance previsto
 
@@ -16,21 +16,21 @@ Paso 2: estructura y documentación inicial. Los archivos HTML, CSS y JavaScript
 
 ## Tecnologías
 
-HTML5, CSS y JavaScript puro. Git para control de versiones y GitHub Pages para publicación. Sin frameworks, backend ni dependencias de aplicación.
+HTML5, CSS y JavaScript. Git para control de versiones locales y GitHub para públicas, GitHub Pages para producción. Sin backend ni dependencias de aplicación.
 
 ## Estructura
 
 ```text
 index.html         Estructura de la página
-css/styles.css     Presentación y adaptación a pantallas
-js/script.js       Generación, eventos y actualización del DOM
-docs/uso-ia.md     Registro de asistencia de IA y decisiones
-docs/pruebas.md    Comprobaciones y resultados reales
+css/styles.css     Estilos y responsividad a pantallas de dispositivos
+js/script.js       Interactividad, eventos y actualización del DOM
+docs/uso-ia.md     Registro de uso de IA y decisiones
+docs/pruebas.md    Pruebas
 ```
 
 ## Ejecución local
 
-Por ahora solo se puede revisar la estructura en VS Code. En el siguiente avance se incorporará la página inicial y un método de previsualización local. No requiere npm install.
+Abre la carpeta en VS Code. Desde su terminal, ejecuta `python3 -m http.server 5500 --bind 127.0.0.1` y visita http://127.0.0.1:5500. Detén el servidor con Control+C. Python solo sirve los archivos durante el desarrollo; no es una dependencia de la aplicación. También puedes usar Live Server si ya lo tienes instalado.
 
 ## Uso y despliegue
 

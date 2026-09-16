@@ -1,6 +1,6 @@
 # Registro del uso de IA
 
-Herramienta: asistente Codex. Uso: tutoría, planificación, implementación y revisión. El estudiante revisa los cambios, practica el flujo de trabajo y contrasta los resultados con la consigna.
+Herramienta: Codex. Uso: tutoría, planificación, implementación y revisión. El estudiante revisa los cambios, practica el flujo de trabajo y contrasta los resultados con la consigna.
 
 ## 1. Planificación y restricciones
 
@@ -12,17 +12,9 @@ Contexto aportado: lectures M1L1–M1L7, consigna, rúbrica y guía de desarroll
 
 Resultado: plan por etapas con generación, DOM, accesibilidad, documentación y publicación. La guía llevó a adelantar el primer flujo funcional y a incluir responsive y comprobación de repositorio público.
 
-## 2. Priorización por tiempo
+## 2. Preparación del proyecto
 
-Prompt literal del estudiante:
-
-> desde cero. Mi fecha límite de entrega es en 8 horas, así que tengo las siguientes dos horas para realizar los pasos 1, 2, 3, 4, 5, 6, 7, 9 y 10 del proyecto (el 8 lo dejo opcional cuando todo el resto esté perfecto, solo si tengo tiempo)
-
-Influencia: los extras quedan fuera del desarrollo inicial y se prioriza la entrega obligatoria completa, con pruebas y documentación.
-
-## 3. Preparación del proyecto
-
-El estudiante confirmó que las herramientas estaban abiertas y proporcionó su usuario de GitHub. El asistente creó la estructura, archivos vacíos de aplicación, README, .gitignore y estos registros. No se afirma que exista aún un generador funcional.
+El asistente creó la estructura, archivos vacíos de aplicación, README, .gitignore y estos registros.
 
 Validación prevista de esta etapa: revisar archivos, primer commit y sincronización con GitHub. Añadir resultados al finalizar la comprobación.
 
@@ -33,3 +25,11 @@ Pendiente: capturas de las conversaciones y de los resultados. Deben mostrar los
 ## Registro de futuras iteraciones
 
 Para cada avance: prompt o extracto real, resultado, decisión adoptada o corregida, archivos afectados, comprobación ejecutada y captura correspondiente. Los prompts resumidos se identificarán como resúmenes.
+
+## 3. Página inicial
+
+Mensaje del estudiante: «se completó la subida». Continuación del plan aprobado: construir la base semántica y los estilos iniciales.
+
+Resultado: header, main, footer, secciones tituladas, botón, lista de colores y región de estado; CSS externo con Grid/Flexbox y foco visible. Se conservó el nombre Paletanator 3,000 que el estudiante incorporó al README. El botón queda deshabilitado para no presentar como funcional una acción aún pendiente.
+
+Decisión: separar la estructura del comportamiento y usar defer para ejecutar el futuro JavaScript después de procesar el HTML. Comprobación ejecutada: página abierta en Chrome y revisión visual desktop. Generación y auditoría completa pendientes. Las capturas de entrega se recopilarán en la etapa de evidencias.
