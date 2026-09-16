@@ -20,7 +20,7 @@ Validación realizada: estructura revisada, primer commit registrado y sincroniz
 
 ## Evidencia visual
 
-Las capturas reales de la aplicación están en [flujo-app.md](flujo-app.md). Pendiente de incorporar: capturas auténticas de las conversaciones que muestren el prompt y la respuesta correspondiente. Los extractos textuales siguientes documentan el uso de IA, pero no se presentan como capturas de conversación.
+Las capturas reales de la aplicación están en [flujo-app.md](flujo-app.md). El estudiante incorporó seis capturas de conversación, enlazadas al final de este documento. Los extractos textuales siguientes complementan esas evidencias.
 
 ## Registro de futuras iteraciones
 
@@ -90,6 +90,17 @@ Aclaración posterior del estudiante (extracto literal):
 
 > no es necesario adjuntar un drive, solo compartir el link al repo de github con todos los archivos pertinentes ahí
 
-Decisión: guardar documentación y evidencias en `docs/` dentro del repositorio, sin Drive. La IA preparó el README, el flujo documentado y cinco capturas reales de la aplicación local. El estudiante revisará los archivos, añadirá capturas de las conversaciones y realizará commit y push. La publicación y prueba de GitHub Pages corresponden al paso 10 y todavía no se presentan como realizadas.
+Decisión: guardar documentación y evidencias en `docs/` dentro del repositorio, sin Drive. La IA preparó el README, el flujo documentado y cinco capturas reales de la aplicación local. El estudiante añadió seis capturas de conversación y subió la documentación en el commit ea2b931. La publicación se verificó posteriormente en el paso 10.
 
-Para completar la evidencia visual de IA, guardar capturas legibles de dos intercambios reales (prompt y respuesta): planificación inicial y una aclaración técnica. Nombres sugeridos: `evidencias/06-ia-plan.png` y `evidencias/07-ia-aclaraciones.png`. Estos archivos todavía no forman parte del repositorio al redactar este registro. Evitar incluir datos privados o credenciales.
+## Capturas de conversación incorporadas por el estudiante
+
+- [Captura IA0](evidencias/IA0.png).
+- [Captura IA1](evidencias/IA1.png).
+- [Captura IA2](evidencias/IA2.png).
+- [Captura IA3](evidencias/IA3.png).
+- [Captura IA4](evidencias/IA4.png).
+- [Captura IA5](evidencias/IA5.png).
+
+## 10. Publicación
+
+El estudiante configuró GitHub Pages desde main y la raíz del repositorio. Se abrió la URL pública en Chrome y se probaron 6/8/9 colores en HEX/HSL, la conservación de HEX al alternar formato y los mensajes de estado. La consola capturada no registró errores ni advertencias. Se actualizó el README con el enlace público; esta actualización documental requiere un último commit y push.

@@ -8,7 +8,11 @@ Autor: MiguelMirandaV.
 
 ## Estado
 
-MVP implementado y probado localmente en Chrome. Publicación en GitHub Pages pendiente del paso 10. La entrega se concentra en este repositorio público, con código, documentación y evidencias; no requiere Drive según la aclaración del curso comunicada por el estudiante.
+MVP publicado en GitHub Pages y probado en Chrome, tanto localmente como en la URL pública.
+
+**[Abrir la aplicación](https://miguelmirandav.github.io/ProyectoM1_MiguelMirandaV/)**
+
+ La entrega se concentra en este repositorio público, con código, documentación y evidencias; no requiere Drive según la aclaración del curso comunicada por el estudiante.
 
 ## Funcionalidades
 
@@ -20,7 +24,7 @@ MVP implementado y probado localmente en Chrome. Publicación en GitHub Pages pe
 
 ## Tecnologías y estructura
 
-HTML5, CSS y JavaScript sin frameworks, backend ni dependencias de aplicación. Git registra el historial y GitHub aloja el repositorio. El despliegue previsto usa GitHub Pages.
+HTML5, CSS y JavaScript sin frameworks, backend ni dependencias de aplicación. Git registra el historial y GitHub aloja el repositorio. El despliegue usa GitHub Pages.
 
 ```text
 ProyectoM1_MiguelMirandaV/
@@ -65,14 +69,14 @@ Con teclado, usa Tab para avanzar por los controles. El enlace inicial permite s
 
 ## Despliegue en GitHub Pages
 
-El despliegue público todavía debe ejecutarse y comprobarse. Para publicarlo desde este repositorio:
+Sitio publicado desde `main` y `/(root)`. Configuración utilizada para reproducir el despliegue:
 
 1. Sube los cambios a la rama `main` del repositorio público.
 2. En GitHub, abre **Settings → Pages**.
 3. En **Build and deployment**, selecciona **Deploy from a branch**.
 4. Elige la rama `main` y la carpeta **/(root)**, y guarda.
 5. Espera a que termine el despliegue; revisa su resultado en **Actions** y abre la URL que muestre Pages.
-6. Comprueba que carguen CSS y JavaScript y prueba las seis combinaciones de tamaño/formato. Incorpora aquí el enlace público verificado.
+6. Comprueba que carguen CSS y JavaScript y prueba las seis combinaciones de tamaño/formato. Comprueba también que alternar formato conserve los colores.
 
 `index.html` está en la raíz y las rutas de los recursos son relativas. La carpeta `docs` contiene documentación, no es la fuente de publicación. Los siguientes pushes a `main` actualizarán el sitio una vez configurado Pages.
 
@@ -94,7 +98,7 @@ Referencia: [configurar la fuente de publicación en GitHub Pages](https://docs.
 - [Registro de pruebas y límites de la revisión](docs/pruebas.md).
 - [Prompts, decisiones y uso de IA](docs/uso-ia.md).
 
-Se probaron las seis combinaciones de cantidad/formato en cuatro anchos (320, 390, 768 y 1440 px), conversiones de colores, entradas inválidas, conservación al alternar, teclado y contraste. La revisión cubre accesibilidad básica; no equivale a una certificación ni a una prueba con lector de pantalla. El despliegue público se comprobará por separado.
+Se probaron las seis combinaciones de cantidad/formato en cuatro anchos (320, 390, 768 y 1440 px), conversiones de colores, entradas inválidas, conservación al alternar, teclado y contraste. La revisión cubre accesibilidad básica; no equivale a una certificación ni a una prueba con lector de pantalla. En la URL pública se verificaron las seis combinaciones, conservación de HEX al alternar y ausencia de errores o advertencias en la consola capturada.
 
 ## Límites y mejoras futuras
 

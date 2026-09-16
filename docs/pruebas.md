@@ -76,3 +76,17 @@ Solo se registran como aprobadas comprobaciones ejecutadas. Las pruebas de la ap
 Contrastes calculados con luminancia relativa sRGB: texto/fondo 14.52:1; texto secundario/fondo 6.35:1; secundario/tarjeta 6.83:1; texto/botón 13.93:1; texto/botón hover 12.17:1; foco/fondo 5.92:1.
 
 Límites: revisión de accesibilidad básica, sin prueba auditiva de lector de pantalla ni certificación WCAG. El chequeo estructural local no sustituye una validación completa del estándar HTML. Publicación y prueba de recursos en la URL de GitHub Pages pendientes del paso 10. No se implementaron extras.
+
+
+## Paso 10: comprobación pública — 2026-09-16
+
+URL: https://miguelmirandav.github.io/ProyectoM1_MiguelMirandaV/
+
+- Configuración observada: Deploy from a branch, main, /(root).
+- Chrome: generación real de 6, 8 y 9 colores en HEX y HSL; conteos y códigos visibles correctos en las seis combinaciones.
+- Alternancia de HSL a HEX con nueve colores: los nueve HEX permanecieron iguales.
+- Mensajes de generación y cambio de vista presentes.
+- Revisión visual: estilos y muestras de color presentes en el sitio público.
+- Consola capturada durante esta comprobación: sin errores ni advertencias.
+
+Las pruebas responsive detalladas del paso 7 se realizaron localmente; no se repitió toda esa matriz en el despliegue público.
