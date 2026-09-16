@@ -61,3 +61,11 @@ Resultado: selector de formato con label; colores como objetos HEX/HSL; funcione
 Decisiones: HEX como referencia para evitar cambios visuales al alternar; HSL equivalente redondeado a dos decimales. La conversión matemática, parseInt con base 16, slice, toString(16) y padStart son ampliaciones explicadas de los fundamentos del módulo. Referencia consultada: HSL en MDN.
 
 Validación: colores conocidos, 1000 conversiones de ida y vuelta y seis combinaciones reales en Chrome, documentadas en pruebas.md. La vista previa se reinició al detectar que el servidor local estaba detenido.
+
+## 7. Revisión del MVP
+
+Prompt del estudiante: «LISTO, sigue con paso 7».
+
+Resultado: ajuste de columnas según cantidad, controles móviles adaptables y foco del destino del enlace de salto.
+
+Influencia de las pruebas: el diseño previo podía dejar una fila con cinco tarjetas y otra con una; se reemplazó por distribuciones equilibradas para los tamaños de la consigna. Se comprobó funcionamiento en 24 combinaciones, geometría sin desbordamiento a cuatro anchos, teclado, foco y contraste calculado. Resultados y límites registrados en pruebas.md.

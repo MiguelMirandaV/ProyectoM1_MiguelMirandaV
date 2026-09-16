@@ -4,7 +4,7 @@ Proyecto del módulo 1 del Full Stack Bootcamp: Aplicación web estática para e
 
 ## Estado actual
 
-Paso 6: genera paletas de 6, 8 o 9 colores en HEX o HSL, muestra HEX siempre y permite cambiar de vista sin perder la paleta. Auditoría final, evidencias y publicación pendientes.
+Paso 7: MVP local implementado y revisado en Chrome. Generación HEX/HSL, tamaños 6/8/9, feedback, navegación con teclado y diseño adaptable verificados. Documentación final, evidencias y publicación pendientes.
 
 ## Alcance previsto
 
@@ -61,3 +61,9 @@ Carpeta de Drive y capturas pendientes. Se incorporarán antes de la entrega.
 Cada color almacena HEX y HSL. En modo HEX se generan seis dígitos aleatorios; en HSL se generan matiz (0–359), saturación y luminosidad (0–100). Se convierte a HEX como referencia común de la muestra y se calcula su equivalente HSL con dos decimales. Puede existir redondeo de hasta 1 por canal RGB al reconvertir.
 
 Referencia: [HSL en MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/hsl).
+
+### Accesibilidad y diseño adaptable
+
+Controles nativos con labels, foco visible, enlace para saltar al contenido y región de estado para mensajes. Los códigos permanecen sobre fondo blanco. Una columna en móvil, dos desde 40rem y tres desde 64rem; las paletas de ocho usan cuatro columnas desde 64rem.
+
+Probado en Chrome a 320, 390, 768 y 1440 píxeles. La revisión cubre accesibilidad básica; no equivale a una certificación ni a una prueba con lector de pantalla.

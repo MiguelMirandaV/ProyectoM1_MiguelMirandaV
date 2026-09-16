@@ -48,3 +48,31 @@ Solo se registran como aprobadas comprobaciones ejecutadas. Las pruebas de la ap
 - Node: 1000 conversiones HEX → HSL → HEX con diferencia máxima permitida de 1 por canal RGB.
 - Chrome: seis combinaciones 6/8/9 × HEX/HSL, conteo correcto y HEX válido siempre visible. HSL visible solo en ese modo.
 - Chrome: alternar HSL a HEX conserva todos los códigos de la paleta. Sin errores ni advertencias capturados en consola.
+
+## Paso 7: auditoría del MVP local
+
+### Cambios derivados de la revisión
+
+- La cuadrícula anterior podía distribuir seis tarjetas en cinco y una. Se usan 3 × 2 para seis, 4 × 2 para ocho y 3 × 3 para nueve en escritorio desde 64rem.
+- Móvil con una columna, controles adaptables y botón de ancho completo; tablet con dos columnas desde 40rem.
+- main tiene tabindex=-1 para recibir foco desde el enlace de salto sin agregarse al recorrido normal con Tab.
+- role=list conserva explícitamente la semántica de lista al quitar los marcadores visuales mediante CSS.
+
+### Resultados ejecutados
+
+| Comprobación | Resultado |
+| --- | --- |
+| 6/8/9 × HEX/HSL a 320, 390, 768 y 1440 px | 24 combinaciones correctas; conteo y visibilidad de HSL correctos |
+| Ancho de página y texto a los cuatro tamaños, con 8 colores HSL | Sin desbordamiento horizontal de página ni de códigos/controles |
+| Inspección visual | Móvil, tablet y escritorio revisados; tarjetas legibles |
+| Teclado | Tab llega a salto; Enter enfoca main; Tab recorre cantidad, formato y botón; Enter genera seis colores |
+| Foco | Contorno azul visible en botón al navegar con teclado |
+| Semántica y referencias | Un main y un h1; IDs únicos; labels asociados; referencias ARIA válidas |
+| Recursos | Rutas relativas de hojas CSS y JS apuntan a archivos existentes |
+| Estilos inline | Ninguno en HTML; colores dinámicos en hoja externa |
+| Consola | Sin errores ni advertencias capturados durante las combinaciones |
+| git diff --check | Sin errores |
+
+Contrastes calculados con luminancia relativa sRGB: texto/fondo 14.52:1; texto secundario/fondo 6.35:1; secundario/tarjeta 6.83:1; texto/botón 13.93:1; texto/botón hover 12.17:1; foco/fondo 5.92:1.
+
+Límites: revisión de accesibilidad básica, sin prueba auditiva de lector de pantalla ni certificación WCAG. El chequeo estructural local no sustituye una validación completa del estándar HTML. Publicación y prueba de recursos en la URL de GitHub Pages pendientes del paso 10. No se implementaron extras.

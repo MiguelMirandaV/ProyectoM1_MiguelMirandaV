@@ -112,6 +112,7 @@ function generatePalette(size, format = "hex") {
 }
 
 function renderPalette(colors) {
+  paletteList.dataset.size = colors.length;
   // Reemplazamos la paleta anterior; no acumulamos tarjetas ni reglas CSS.
   paletteList.replaceChildren();
   while (paletteStylesheet.cssRules.length > 0) {
